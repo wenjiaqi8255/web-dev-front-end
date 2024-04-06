@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .contain-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container{
+      display: grid;
+      width: 748px;
+      height: 746px; 
+      object-fit: cover;
+
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+    .black{
+      background-color: #232629;
+      grid-row: 4/5;
+      grid-column: 3/4;
+    }
+    .gap{
+      background-color: #000;
+    }
+    .blue{
+      background-color: #004592;
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+
+      border-bottom: 10px solid black;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      grid-row: 4/5;
+      grid-column: 2/3;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+
+    .r1{
+      grid-row: 1 / 2;
+      grid-column: 2 / 5;
+    }
+
+    .r21{
+      grid-row: 2 / 4;
+      grid-column: 1 / 2;
+    }
+
+    .r22{
+      grid-row: 2 / 4;
+      grid-column: 2 / 4;
+    }
+    .r4{
+      grid-row: 3/5;
+      grid-column: 4/5;
+    }
+    .r5{
+      grid-row: 4/5;
+      grid-column: 1/2;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="contain-container">
+    <div class="container">
+      <div class="red"></div>
+      <div class="black"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="white r1"></div>
+      <div class="white r21"></div>
+      <div class="white r22"></div>
+      <div class="white r3"></div>
+      <div class="white r4"></div>
+      <div class="white r5"></div>
+    </div>
+  </div>
+</body>
+
+</html>
