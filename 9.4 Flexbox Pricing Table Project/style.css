@@ -1,0 +1,77 @@
+@media (max-width: 1200px) {
+    .pricing-container{
+        background-color: red;
+        flex-direction: column;
+
+        /* justify-content: flex-start; */
+        /* height: 100%; */
+    }
+    
+}
+
+ul{
+    list-style: none;
+    list-style-position: outside;
+    
+}
+.pricing-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing-plan{
+    /* 整体的展示 */
+    flex: 1;
+    min-width: 300px;
+    min-height: 300px;
+    /* 内容物的展示 */
+    background-color: rgb(241, 243, 239);
+    border-radius: 2rem;
+
+    padding: 2rem;
+    margin: 0 rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-title{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+
+    font-weight: 800;
+}
+
+.plan-price{
+    font-size: 2rem;
+
+    font-weight: 600;
+}
+
+.plan-feature{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.plan-button{
+    padding: 1rem 4rem;
+    border-radius: 4rem;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top left, rgba(255, 225, 215, 0.2), rgba(255, 127, 110, 0.854) 30%);
+    border: 0;
+    font-size: 1rem;
+    color: #222222;
+    box-shadow: inset -1px -4px 14px rgba(238, 122, 109, 0.688) ;
+
+}
+
+.plan-button:hover{
+    background-color: rgb(255, 158, 158);
+}
